@@ -4,15 +4,15 @@
 
     namespace Coco\closure;
 
-    class ClosureContext
+class ClosureContext
+{
+    public ClosureScope $scope;
+
+    public int $locks;
+
+    public function __construct()
     {
-        public ClosureScope $scope;
-
-        public int $locks;
-
-        public function __construct()
-        {
-            $this->scope = new ClosureScope();
-            $this->locks = 0;
-        }
+        $this->scope = new ClosureScope();
+        $this->locks = 0;
     }
+}

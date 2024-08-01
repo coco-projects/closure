@@ -4,12 +4,12 @@
 
     namespace Coco\closure;
 
-    class SelfReference
-    {
-        public string $hash;
+class SelfReference
+{
+    public string $hash;
 
-        public function __construct(string $hash)
-        {
-            $this->hash = $hash;
-        }
+    public function __construct(string $hash)
+    {
+        $this->hash = $hash;
     }
+}
