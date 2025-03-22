@@ -6,7 +6,7 @@
 
 class ClosureStream
 {
-    const string STREAM_PROTO = 'closure';
+    const STREAM_PROTO = 'closure';
 
     protected static bool $isRegistered = false;
 
